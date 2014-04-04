@@ -20,9 +20,9 @@
 <body>
 
 <header class="header-wrapper">
-    <div class="header-inner pad col-12 col-9-t mgn-S">
-        <h1>S.J.Rollett</h1>
-        <h2>Digital Media Manager</h2>
+    <div class="header-inner pad col-12 mgn-S">
+        <span>S.J.Rollett</span>
+
     </div>
 </header>
 

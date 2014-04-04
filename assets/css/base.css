@@ -1,4 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+body {
+  display: block;
+  min-height: 100%;
+  overflow: auto;
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+a,
+b,
+div,
+li,
+span,
+strong,
+table,
+td,
+th,
+ul {
+  box-sizing: border-box;
+}
+.header-wrapper,
+.footer-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
 .col-1,
 .col-2,
 .col-3,
@@ -838,17 +872,20 @@ h3,
   font-size: 2em;
   margin: 0.25em;
 }
-.header-wrapper {
+.header-inner {
   background: #ffffff;
 }
-.content-wrapper {
+.content-inner {
   background: #ffffff;
 }
-.footer-wrapper {
+.footer-inner {
   background: #ffffff;
 }
 .accordion-item {
   background: #ffffff;
+}
+.site-width {
+  width: 90%;
 }
 @media only screen and (min-width: 46em) {
   .page-title {

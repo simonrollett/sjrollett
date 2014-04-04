@@ -2,7 +2,7 @@
 </div>
 
 <footer class="footer-wrapper">
-    <div class="footer-inner pad col-12 col-9-t">
+    <div class="footer-inner pad col-12">
         &copy; S. J. Rollett. All rights reserved.
     </div>
 </footer>
