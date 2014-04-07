@@ -29,7 +29,11 @@ ul {
   box-sizing: border-box;
 }
 .header-wrapper,
-.footer-wrapper {
+.footer-wrapper,
+.content-1,
+.content-2,
+.content-3,
+.content-wrapper {
   width: 90%;
   margin: 0 auto;
 }
