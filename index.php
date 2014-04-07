@@ -12,9 +12,9 @@
             </h1>
             <h2 class="heading-block">
                 <a class="heading-block-link" href="">
-                    My Future:
+                    Vision:
                     <span class="heading-block-link-caption">
-                        What I'm looking for
+                        Where I'm heading
                     </span>
                 </a>
             </h2>
@@ -29,11 +29,11 @@
 
         </section>
 
-        <section class="content-2  col-12 pad mgn-S">
+        <section class="content-2  col-12 col-6-t pad mgn-S">
             secondary
         </section>
 
-        <section class="content-3  col-12 pad mgn-S">
+        <section class="content-3  col-12 col-6-t pad mgn-S">
             tertiary
         </section>
 

@@ -1,3 +1,5 @@
+@import "variables.less";
+
 body{
   display:block;
   min-height:100%;
@@ -5,6 +7,7 @@ body{
   width: 100%;
   float:left;
   margin:0;
+  font-size:@gutter;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -13,9 +16,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a,
+article,
 b,
 div,
+footer,
+header,
 li,
+nav,
+section,
 span,
 strong,
 table,
@@ -32,8 +40,9 @@ ul{
 .content-3,
 .content-wrapper
 {
-    .site-width;
-    margin:0 auto;
+    .mgn-ctr;
+    width:94%;
+
 }
 
 .heading-block{
@@ -52,7 +61,22 @@ ul{
 
   .heading-block-link-caption{
     display:block;
+    font-size:@gutter_small;
 
   }
 
+}
+
+//
+@media only screen and(min-width:@desktop_large){
+
+    .header-wrapper,
+    .footer-wrapper,
+    .content-1,
+    .content-2,
+    .content-3,
+    .content-wrapper
+    {
+    width:@desktop;
+    }
 }

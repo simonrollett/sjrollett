@@ -41,15 +41,32 @@ h3,
 }
 
 .site-width{
-    width:90%;
+    width:94%;
+    margin:0 auto;
 }
 
-@media only screen and(min-width:@tablet){
+//
+
+
+
+@media only screen and(min-width:@tablet_small){
 
     .page-title{
       font-size:@gutter*3;
       margin:@gutter_half 0;
       color:@grayDark;
+    }
+
+    .heading-block{
+        font-size:@gutter*2;
+    }
+
+}
+
+@media only screen and(min-width:@tablet){
+
+    .heading-block{
+        font-size:@gutter*2.5;
     }
 
 }
