@@ -48,7 +48,7 @@ ul {
   width: 100%;
   float: left;
   clear: both;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .heading-block .heading-block-link {
   display: block;
@@ -56,7 +56,6 @@ ul {
 }
 .heading-block .heading-block-link-caption {
   display: block;
-  font-size: 0.75em;
 }
 @media only screen and (min-width: 90em) {
   .header-wrapper,
@@ -938,6 +937,12 @@ h3,
   width: 94%;
   margin: 0 auto;
 }
+.heading-block {
+  font-size: 1.5em;
+}
+.heading-block-link-caption {
+  font-size: 0.75em;
+}
 @media only screen and (min-width: 34em) {
   .page-title {
     font-size: 3em;
@@ -945,7 +950,7 @@ h3,
     color: #333333;
   }
   .heading-block {
-    font-size: 2em;
+    font-size: 1.55em;
   }
 }
 @media only screen and (min-width: 46em) {

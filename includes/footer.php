@@ -1,11 +1,15 @@
 <!-- Footer  -->
-</div>
-
-<footer class="footer-wrapper">
-    <div class="footer-inner pad col-12">
-        &copy; S. J. Rollett. All rights reserved.
     </div>
-</footer>
+
+    <footer class="footer-wrapper">
+        <div class="footer-inner pad col-12">
+            &copy; S. J. Rollett. All rights reserved.
+        </div>
+        <nav class="footer-options">
+            <section class="col-6">left</section>
+            <section class="col-6">right</section>
+        </nav>
+    </footer>
 </div>
 
 

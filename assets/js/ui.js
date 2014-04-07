@@ -1,5 +1,12 @@
 // toggle expanding hidden panel content
 
+$(window).resize(function(){
+	if ($(".site-width").css("width") !== "94%" ){
+		// your code here
+        //alert("bigger than 94%");
+	}
+});
+
 $(document).ready(function($) {
 
     $(".j-hidden-content").click(function (e){
