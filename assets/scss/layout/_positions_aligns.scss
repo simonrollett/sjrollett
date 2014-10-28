@@ -1,0 +1,115 @@
+.FL{
+  float:left !important;
+}
+.FR{
+  float:right !important;
+}
+.FN{
+  float:none !important;
+}
+
+.AR{
+  text-align: right !important;
+}
+.AL{
+  text-align: left !important;
+}
+.AC{
+  text-align: center !important;
+}
+
+@media only screen and (min-width:$tablet_small){
+
+  .FL-ts{
+    float:left !important;
+  }
+  .FR-ts{
+    float:right !important;
+  }
+  .FN-ts{
+    float:none !important;
+  }
+
+  .AR-ts{
+    text-align: right !important;
+  }
+  .AL-ts{
+    text-align: left !important;
+  }
+  .AC-ts{
+    text-align: center !important;
+  }
+
+}
+
+@media only screen and (min-width:$tablet){
+
+  .FL-t{
+    float:left !important;
+  }
+  .FR-t{
+    float:right !important;
+  }
+  .FN-t{
+    float:none !important;
+  }
+
+  .AR-t{
+    text-align: right !important;
+  }
+  .AL-t{
+    text-align: left !important;
+  }
+  .AC-t{
+    text-align: center !important;
+  }
+
+}
+
+@media only screen and (min-width:$desktop_small){
+
+  .FL-ds{
+    float:left !important;
+  }
+  .FR-ds{
+    float:right !important;
+  }
+  .FN-ds{
+    float:none !important;
+  }
+
+  .AR-ds{
+    text-align: right !important;
+  }
+  .AL-ds{
+    text-align: left !important;
+  }
+  .AC-ds{
+    text-align: center !important;
+  }
+
+}
+
+@media only screen and (min-width:$desktop){
+
+  .FL-d{
+    float:left !important;
+  }
+  .FR-d{
+    float:right !important;
+  }
+  .FN-d{
+    float:none !important;
+  }
+
+  .AR-d{
+    text-align: right !important;
+  }
+  .AL-d{
+    text-align: left !important;
+  }
+  .AC-d{
+    text-align: center !important;
+  }
+
+}
