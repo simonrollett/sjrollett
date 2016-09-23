@@ -1,0 +1,96 @@
+@import "../BASE/base_variables";
+
+// page classes
+
+  .body{
+    .mgn-NS;
+    .pad-NS;
+  }
+
+.content{
+
+  background:@white;
+
+}
+
+//gallery item
+
+
+
+  .gallery-item{
+
+    .img-responsive-bg{
+      border:solid 1px @grayMidDark;
+    }
+
+  }
+
+  .gallery-item-image{
+
+    .img-responsive-bg{
+
+      .col-12;
+
+    }
+
+  }
+
+  .gallery-item h2,
+  .gallery-item h2 a{
+    color:@white;
+  }
+
+
+  .gallery-item-content{
+    color:@grayMidDark;
+  }
+
+//
+
+.content-page-gallery-item{
+
+  color:@white;
+
+}
+
+
+
+
+.border-top{
+  border-top:solid 1px @grayMidDark;
+}
+
+@media only screen and (min-width:@tablet){
+
+  .content-page-gallery-item-image{
+
+    margin: 0 @gutter;
+    .col-8;
+
+  }
+
+}
+
+@media only screen and (min-width:@desktop){
+
+  .page-title,
+  .page-sub-title{
+    padding-left:0;
+  }
+
+
+
+  .content-page-gallery-item{
+
+    .pad-0;
+
+  }
+
+  .content-page-gallery-item-image{
+
+    margin: 0;
+    .col-8;
+
+  }
+
+}

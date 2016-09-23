@@ -1,0 +1,398 @@
+//@import "variables.less";
+@import "layout_variables.less";
+@gutter: @gutter;
+
+    .pad-0{
+      padding:0;
+    }
+
+    .pad{
+        padding: @gutter;
+    }
+    .pad-N{
+        padding:@gutter 0 0 0;
+    }
+    .pad-E{
+        padding: 0 @gutter 0 0;
+    }
+    .pad-S{
+        padding:0 0 @gutter 0;
+    }
+    .pad-W{
+        padding:0 0 0 @gutter;
+    }
+    .pad-NE{
+      padding:@gutter @gutter 0 0;
+    }
+    .pad-NES{
+      padding:@gutter @gutter @gutter 0;
+    }
+    .pad-NEW{
+      padding:@gutter @gutter 0 @gutter;
+    }
+    .pad-NSW{
+      padding:@gutter 0 @gutter @gutter;
+    }
+    .pad-ESW{
+      padding: 0 @gutter @gutter @gutter;
+    }
+    .pad-NS{
+      padding:@gutter 0 @gutter 0;
+    }
+    .pad-EW{
+      padding:0 @gutter 0 @gutter;
+    }
+    .pad-SW{
+      padding:0 0 @gutter @gutter;
+    }
+    .pad-NW{
+      padding:@gutter 0 0 @gutter;
+    }
+
+// margins, clockwise, by compass point
+    .mgn{
+        margin: @gutter;
+    }
+    .mgn-N{
+         margin:@gutter 0 0 0;
+     }
+    .mgn-E{
+        margin: 0 @gutter 0 0;
+    }
+    .mgn-S{
+         margin:0 0 @gutter 0;
+    }
+    .mgn-W{
+      margin: 0 0 0 @gutter;
+    }
+
+    .mgn-NE{
+        margin:@gutter @gutter 0 0;
+    }
+    .mgn-NW{
+      margin:@gutter 0 0 @gutter;
+    }
+    .mgn-NES{
+      margin:@gutter @gutter @gutter 0;
+    }
+    .mgn-NEW{
+      margin:@gutter @gutter 0 @gutter;
+    }
+    .mgn-NSW{
+      margin:@gutter 0 @gutter @gutter;
+    }
+    .mgn-ESW{
+      margin:0 @gutter @gutter @gutter;
+    }
+    .mgn-NS{
+      margin:@gutter 0 @gutter 0;
+    }
+    .mgn-EW{
+      margin:0 @gutter 0 @gutter;
+    }
+
+    .mgn-0{
+      margin:0;
+    }
+
+    .mgn-ctr{
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+@media only screen and (min-width: @phone){
+
+  .pad-p{
+    padding: @gutter;
+  }
+  .pad-N-p{
+    padding-top:@gutter;
+  }
+  .pad-E-p{
+    padding-right: @gutter;
+  }
+  .pad-S-p{
+    padding-bottom: @gutter;
+  }
+  .pad-W-p{
+    padding-left:@gutter;
+  }
+  .pad-NE-p{
+    .pad-NE;
+  }
+  .pad-NES-p{
+    .pad-NES;
+  }
+  .pad-NEW-p{
+    .pad-NEW;
+  }
+  .pad-NSW-p{
+    .pad-NSW;
+  }
+  .pad-ESW-p{
+    .pad-ESW;
+  }
+  .pad-NS-p{
+    .pad-NS;
+  }
+  .pad-EW-p{
+    .pad-EW;
+  }
+  .pad-SW-p{
+    .pad-SW;
+  }
+
+  // margins, clockwise, by compass point
+  .mgn-p{
+    margin: @gutter;
+  }
+  .mgn-N-p{
+    .mgn-N;
+  }
+  .mgn-E-p{
+    .mgn-E;
+  }
+  .mgn-S-p{
+    .mgn-S;
+  }
+  .mgn-W-p{
+    .mgn-W;
+  }
+
+  .mgn-NE-p{
+    .mgn-NE;
+  }
+  .mgn-NW-p{
+    .mgn-NW;
+  }
+  .mgn-NES-p{
+    .mgn-NES;
+  }
+  .mgn-NEW-p{
+    .mgn-NEW;
+  }
+  .mgn-NSW-p{
+    .mgn-NSW;
+  }
+  .mgn-ESW-p{
+    .mgn-ESW;
+  }
+  .mgn-NS-p{
+    .mgn-NS;
+  }
+  .mgn-EW-p{
+    .mgn-EW;
+  }
+
+  .mgn-0-p{
+    .mgn-0;
+  }
+
+  .mgn-ctr-p{
+    .mgn-ctr;
+  }
+
+}
+
+
+@media only screen and (min-width: @tablet_small) {
+
+  .pad-ts{
+    .pad;
+  }
+  .pad-N-ts{
+    .pad-N;
+  }
+  .pad-E-ts{
+    .pad-E;
+  }
+  .pad-S-ts{
+    .pad-S;
+  }
+  .pad-W-ts{
+    .pad-W;
+  }
+  .pad-NE-ts{
+    .pad-NE;
+  }
+  .pad-NES-ts{
+    .pad-NES;
+  }
+  .pad-NEW-ts{
+    .pad-NEW;
+  }
+  .pad-NSW-ts{
+    .pad-NSW;
+  }
+  .pad-ESW-ts{
+    .pad-ESW;
+  }
+  .pad-NS-ts{
+    .pad-NS;
+  }
+  .pad-EW-ts{
+    .pad-EW;
+  }
+  .pad-SW-ts{
+    .pad-SW;
+  }
+
+  .pad-0-ts{
+    .pad-0;
+  }
+
+  // vertical % paddings
+
+  .pad-N-1-ts{
+    padding-top:@w_1_of_12;
+  }
+
+  // margins, clockwise, by compass point
+  .mgn-ts{
+    .mgn;
+  }
+  .mgn-N-ts{
+    .mgn-N;
+  }
+  .mgn-E-ts{
+    .mgn-E;
+  }
+  .mgn-S-ts{
+    .mgn-S;
+  }
+  .mgn-W-ts{
+    .mgn-W;
+  }
+
+  .mgn-NE-ts{
+    .mgn-NE;
+  }
+  .mgn-NW-ts{
+    .mgn-NW;
+  }
+  .mgn-NES-ts{
+    .mgn-NES;
+  }
+  .mgn-NEW-ts{
+    .mgn-NEW;
+  }
+  .mgn-NSW-ts{
+    .mgn-NSW;
+  }
+  .mgn-ESW-ts{
+    .mgn-ESW;
+  }
+  .mgn-NS-ts{
+    .mgn-NS;
+  }
+  .mgn-EW-ts{
+    .mgn-EW
+  }
+
+  .mgn-0-ts{
+    .mgn-0
+  }
+
+  .mgn-ctr-ts{
+    .mgn-ctr
+  }
+
+}
+
+
+@media only screen and (min-width: @tablet){
+
+
+  .pad-t{
+    .pad;
+  }
+  .pad-N-t{
+    .pad-N;
+  }
+  .pad-E-t{
+    .pad-E;
+  }
+  .pad-S-t{
+    .pad-S;
+  }
+  .pad-W-t{
+    .pad-W;
+  }
+  .pad-NE-t{
+    .pad-NE;
+  }
+  .pad-NES-t{
+    .pad-NES;
+  }
+  .pad-NEW-t{
+    .pad-NEW;
+  }
+  .pad-NSW-t{
+    .pad-NSW;
+  }
+  .pad-ESW-t{
+    .pad-ESW;
+  }
+  .pad-NS-t{
+    .pad-NS;
+  }
+  .pad-EW-t{
+    .pad-EW;
+  }
+  .pad-SW-t{
+    .pad-SW;
+  }
+
+  .pad-0-t{
+    .pad-0;
+  }
+
+
+  .mgn-0-t{
+    .mgn-0
+  }
+
+}
+
+@media only screen and (min-width: @desktop_small){
+
+  .pad-N-ds{
+    .pad-N;
+  }
+
+  .pad-S-ds{
+    .pad-S;
+  }
+
+  .pad-E-ds{
+    .pad-E;
+  }
+
+  .pad-NS-ds{
+    .pad-NS;
+  }
+
+  .mgn-0-ds{
+    .mgn-0;
+  }
+
+  .mgn-NS-ds{
+    .mgn-NS;
+  }
+
+}
+@media only screen and (min-width: @desktop){
+
+  .pad-S-d{
+    .pad-S;
+  }
+
+  .pad-0-d{
+    .pad-0;
+  }
+
+  .mgn-0-d{
+    .mgn-0;
+  }
+
+}

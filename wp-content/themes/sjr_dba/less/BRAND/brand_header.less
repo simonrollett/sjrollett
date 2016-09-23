@@ -1,0 +1,101 @@
+@import "brand_variables";
+
+.header{
+
+  .bg-trans-black(@header_nav_bg_color);
+
+  .logo-link-caption,
+  .glyphicon{
+
+    color:@white;
+
+  }
+
+  .logo-link-caption{
+
+    .bg-trans-white(20);
+
+  }
+
+
+  .menu-main{
+
+    .menu-item{
+
+      a{
+        color:@white;
+        text-decoration: none;
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (min-width:@phone_large){
+
+  .header{
+
+    .bg-trans-black(@header_nav_bg_color);
+
+    .logo-link-caption{
+
+    }
+
+  }
+
+}
+
+@media only screen and (min-width:@tablet_small){
+
+  .header{
+
+    .logo-link-caption{
+
+      background: transparent;
+
+    }
+
+    .menu-item,
+    .logo-link,
+    .logo-link-caption{
+      border-left:none;
+      margin-left:1px;
+      //border-top: 1px solid rgba(255, 255, 255, 0.2);
+      //border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+      .sub-menu{
+
+        .menu-item{
+
+          .sub-menu-menu-item;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (min-width:@tablet){
+
+  .header{
+
+    background: transparent;
+
+    .menu-item,
+    .logo-link,
+    .logo-link-caption{
+
+      .bg-trans-black(@header_nav_bg_color);
+
+    }
+
+  }
+
+}

@@ -1,0 +1,45 @@
+@import "../BASE/base_variables";
+@import "../LAYOUT/layout_variables";
+
+@radial_color_inner: @grayDark ;
+@radial_color_outer: @black;
+
+html {
+  //background: url(../images/bg_1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: @black;
+}
+
+body{
+  //background:@black;
+  background-image:
+    radial-gradient(
+      circle at top center,
+      @radial_color_inner,
+      @radial_color_outer
+    );
+}
+
+body.home{
+  //background-image: url('../images/bg_1.jpg');
+  background-color: @black;
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.blur-enabled{
+
+  .logo-link,
+  .logo-link-caption,
+  .body,
+  .footer{
+    -webkit-filter: blur(3px);
+    filter: blur(5px);
+    .transparent_class(30);
+  }
+
+}

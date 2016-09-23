@@ -1,0 +1,159 @@
+/* forms */
+.form{
+
+  fieldset{
+    border:0;
+    margin:0;
+    padding:0;
+  }
+
+  .input-radio{
+
+    .label{
+      display:inline-block;
+      margin-right:@gutter_half;
+    }
+    .input{
+      display:inline-block;
+    }
+  }
+
+  .radios{
+    input{
+      display:inline-block;
+      margin-right:@gutter_half;
+    }
+    label{
+      cursor:pointer;
+      display:inline-block;
+      margin-right:@gutter;
+    }
+  }
+
+  .radios-rows{
+    label{
+      display:block;
+    }
+  }
+
+  .input-checkbox-L{
+    display:inline-block;
+    margin-right:@gutter_half;
+    float:left;
+  }
+
+  .input-radio-right{
+    text-align:right;
+    input{
+      margin-top:@gutter_half;
+      float:right;
+    }
+  }
+
+  .input-radio,
+  input[type="text"],
+  .input-text input,
+  .input-text textarea,
+  .input-textarea input,
+  .label{
+    resize: none;
+    display:block;
+  }
+
+  .input-radio,
+  input[type="text"],
+  .input-text input,
+  select,
+  .select,
+  .form-icon-wrapper,
+  .form-icon-wrapper .btn{
+    font-size:@text;
+    line-height:@text*2;
+    height:@gutter*2;
+  }
+
+  .input-text textarea,
+  input[type="text"],
+  .input-text input,
+  select,
+  .select,
+  .form-icon-wrapper,
+  .form-icon-wrapper .btn{
+    font-size:@text;
+  }
+
+  .readonly,
+  .input-text .readonly,
+  .input-textarea .readonly{
+    border:0;
+    background:@white;
+    color:@grayMidDark;
+  }
+
+
+  .input-text,
+  .radios{
+    line-height:@text*1.5;
+  }
+
+  .input-text{
+
+    font-weight:bold;
+
+    textarea{
+      height:@gutter*4;
+    }
+
+  }
+
+  .label{
+    display:block;
+    cursor:pointer;
+    line-height:@text*1.5;
+    font-size:1em;
+    margin:0;
+    color:@grayMidDark;
+    padding-right:@gutter_half;
+  }
+
+  input[type="text"],
+  .input-text input,
+  .input-text textarea,
+  .input-textarea input,
+  select,
+  .select{
+    display:block;
+    border:solid 1px @grayMidLight;
+    width:100%;
+    background:@grayLightest;
+    box-sizing: border-box;
+    color:@grayDark;
+
+    &:focus{
+      border:solid 1px @black;
+      color:@black;
+      background:@white;
+      /*css3 fade in below */
+      outline: 0;
+      outline: thin dotted; /* IE6-9 */
+      //.box-shadow(inset 0 1px 1px rgba(204,204,204,.075), 0 0 8px rgba(187,22,163,.6));
+    }
+
+    option{
+      padding:@gutter_half;
+      display:block;
+      cursor:pointer;
+    }
+  }
+
+  textarea,
+  .input-textarea{
+    min-height:100px;
+  }
+
+  .checkbox{
+    display:inline-block;
+    margin-right:@gutter;
+  }
+
+}

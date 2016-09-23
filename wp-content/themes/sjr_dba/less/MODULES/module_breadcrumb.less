@@ -1,0 +1,30 @@
+.wrapper-breadcrumb{
+  display:none;
+}
+
+@media only screen and (min-width:@phone){
+
+  .wrapper-breadcrumb{
+    clear:both;
+    display:block;
+
+  }
+
+  .breadcrumb-trail{
+    .site-width;
+    padding:@gutter/6 @gutter_half @gutter/6 @gutter_half;
+
+    .sep{
+      padding:0;
+    }
+
+    a{
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}

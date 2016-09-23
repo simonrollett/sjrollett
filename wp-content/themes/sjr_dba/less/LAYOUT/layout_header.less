@@ -1,0 +1,80 @@
+@import "layout_variables";
+
+.header{
+
+  //.col-12;
+
+  .logo-link{
+
+    .nav-top-element();
+
+  }
+
+  .logo{
+    height:@text_large;
+  }
+
+  .logo-link-caption{
+    padding:@gutter/3 @gutter;
+  }
+
+  .icon-menu{
+
+    .nav-top-element();
+
+    .glyphicon{
+      float:left;
+    }
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width:@phone_large) {
+
+  .header{
+
+    .logo-link-caption{
+
+      .nav-top-element();
+
+    }
+
+  }
+
+}
+
+
+@media only screen and (min-width:@tablet_small){
+
+  .header{
+
+    .logo{
+      height:@text*2;
+    }
+
+  }
+
+  .sub-menu{
+
+    .sub-menu-ts;
+
+  }
+
+}
+
+
+@media only screen and (min-width:@tablet){
+
+  .header{
+
+    .logo{
+      height:auto;
+    }
+
+  }
+
+}

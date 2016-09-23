@@ -1,0 +1,206 @@
+
+.glyphicon{
+  color:@white;
+  text-decoration: none;
+}
+
+.dark_link_hover{
+//  .bg-trans-black(60);
+  background:@grayDark;
+  color:@white;
+}
+
+.dark_link_hover_N{
+  .dark_link_hover;
+  border-top: solid @white @gutter/5;
+  //margin-bottom: -@gutter/5;
+
+  a{
+    //padding-bottom:@gutter_small !important;
+  }
+
+}
+
+//background:@white;
+//color:@grayDark;
+//border:none;
+//border-left: solid @white @gutter/5;
+
+.dark_link_hover_W{
+  .dark_link_hover;
+  border-top:none;
+  margin-bottom:0;
+  border-left: solid @white @gutter/5;
+}
+
+.header{
+
+  .menu-main{
+
+    .menu{
+
+      .menu-item{
+
+        &:hover{
+          .dark_link_hover_N;
+
+          a{
+            margin-top:-@gutter/5;
+          }
+
+          //padding-bottom:@gutter*.66;
+        }
+
+        border-left:solid 1px @grayDark;
+
+        .sub-menu{
+
+          .menu-item{
+
+            background:@black;
+            border-bottom:solid 1px @grayDark;
+
+            &:hover{
+              .dark_link_hover_W;
+            }
+
+            a{
+
+              margin-top: auto;
+              .ds-B;
+              .col-12;
+
+              &:hover{
+
+                //.hover-class;
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .selected{
+        border-top: solid @white @gutter/5;
+        margin-bottom: -@gutter/5;
+        background:@black;
+
+        .menu-item{
+          background:@black;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.img-thumb-current{
+  .transparent_class(30);
+}
+
+.gallery-nav{
+
+  .transparent_class(90);
+  border-top:solid 1px @grayMidDark;
+
+  .icon-subheading{
+    color:@white;
+    font-weight:normal;
+  }
+
+  .icon{
+
+    .bg-trans-black(@header_nav_bg_color);
+
+    &:hover{
+
+      .dark_link_hover_W;
+
+    }
+
+  }
+
+  .icon-next{
+
+    margin-left:1px;
+    margin-right:-1px;
+
+  }
+
+  .icon-disabled{
+
+    border:0;
+
+    &:hover{
+
+      border:0;
+      .bg-trans-black(@header_nav_bg_color);
+
+    }
+
+  }
+
+}
+
+@media only screen and (min-width:@tablet_small){
+
+  .header{
+
+    .menu-main{
+
+      .menu{
+
+        .menu-item{
+
+          margin-left: 1px;
+
+          .sub-menu{
+
+            .menu-item{
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+  }
+
+}
+@media only screen and (min-width:@tablet){
+
+  .header{
+
+    .menu-main{
+
+      .menu{
+
+        .menu-item{
+
+          border-left:none;
+
+        }
+
+      }
+
+    }
+  }
+
+  .gallery-nav{
+
+    background:transparent;
+    border-top:none;
+
+  }
+
+}

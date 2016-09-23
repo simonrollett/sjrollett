@@ -1,0 +1,56 @@
+@import "../variables";
+@import "../icons";
+
+.btn{
+  display:inline-block;
+  text-align:center;
+  cursor:pointer;
+  .box-shadow(@shadowDefault);
+  cursor:pointer;
+  text-decoration: none;
+  line-height:@text*2;
+  position:relative;
+  top:-1px;
+  padding:@gutter_half @gutter;
+  outline:0;
+  border:0;
+
+  &:active{
+    box-shadow:@shadowInset;
+    top:0;
+  }
+}
+
+.btn-black{
+  .grad-NS(@grayDark,@grayMidDark);
+  color:@white;
+
+  &:hover{
+    .grad-NS(@grayMidDark,@grayMid);
+  }
+}
+
+.btn-white{
+  .grad-NS(@grayLightest,@white);
+  color:@grayDark;
+
+  &:hover{
+    .grad-NS(@white,@white);
+  }
+}
+
+.btn-cta{
+  .grad-NS(#33cc66,#99cc33);
+  color:@white;
+}
+
+.btn-small{
+  font-size:@text_small;
+  padding:@gutter_qtr @gutter_half;
+  line-height:@text;
+}
+
+.btn-large{
+  padding:@gutter;
+  font-size:@text;
+}

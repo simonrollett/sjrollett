@@ -1,0 +1,109 @@
+//@import "variables.less";
+//hide and show
+
+.ds-B{
+  display:block;
+}
+
+.ds-IB{
+    display:inline-block !important;
+    width:auto !important;
+}
+
+.hide{
+  display:none !important;
+}
+
+.show{
+  display:block !important;
+}
+
+.show-p,
+.show-pl,
+.show-ts,
+.show-t{
+  display:none !important;
+}
+
+.invisi{
+    visibility: hidden;
+}
+.visi{
+    visibility:visible;
+}
+
+@media only screen and (min-width:@phone){
+
+  .show-p{
+    display:block !important;
+  }
+
+  .ds-IB-p{
+    display:inline-block !important;
+    width:auto !important;
+  }
+
+  .hide-p{
+    display:none !important;
+  }
+
+}
+
+@media only screen and (min-width:@phone_large){
+
+  .show-pl{
+    display:block !important;
+  }
+
+}
+
+@media only screen and (min-width:@tablet_small){
+
+  .show-ts{
+    display:block !important;
+  }
+
+  .ds-IB-ts{
+    display:inline-block !important;
+    width:auto !important;
+  }
+
+  .hide-ts{
+    display:none !important;
+  }
+
+}
+
+@media only screen and (min-width:@tablet){
+
+  .show-t{
+    display:block !important;
+  }
+
+  .ds-IB-t{
+    display:inline-block !important;
+    width:auto !important;
+  }
+
+  .hide-t{
+    display:none !important;
+  }
+
+}
+
+@media only screen and (min-width:@desktop_small){
+
+  .show-ds{
+    display:block !important;
+  }
+
+  .ds-IB-ds{
+    display:inline-block !important;
+    width:auto !important;
+  }
+
+  .hide-ds{
+    display:none !important;
+  }
+
+}

@@ -1,0 +1,35 @@
+@import "variables";
+
+.hidden-content-wrapper{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:1px;
+}
+
+.hidden-content-title{
+  margin:0;
+  padding:@gutter 0;
+  cursor:pointer;
+}
+
+.hidden-content{
+  display:none;
+}
+
+@media only screen and (min-width:@tablet_small){
+
+  .hidden-content{
+    display: block !important;
+    height: auto !important;
+
+  }
+
+  .hidden-content-title{
+    cursor:default;
+  }
+
+  .hidden-content-title{
+    background:none;
+  }
+
+}

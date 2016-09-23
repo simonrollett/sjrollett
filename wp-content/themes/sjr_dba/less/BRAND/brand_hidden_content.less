@@ -1,0 +1,26 @@
+.hidden-content-wrapper{
+  border-top:@border-style-dotted;
+}
+
+.hidden-content-title{
+  color:@black;
+  background:url("../images/icon-sprite.png") no-repeat right 10px;
+  //font-family: @text_default;
+  //text-transform: lowercase;
+  //font-variant: small-caps;
+}
+.toggled-open-Y{
+  background:url("../images/icon-sprite.png") no-repeat right -90px;
+}
+
+@media only screen and (min-width:@tablet_small){
+
+  .hidden-content-title{
+    background: none;
+    color:@grayMidDark;
+    font-weight:normal;
+    padding:@gutter_large 0 @gutter;
+    //padding:@gutter;
+  }
+
+}
