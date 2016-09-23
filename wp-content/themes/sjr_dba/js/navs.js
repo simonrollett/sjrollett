@@ -19,6 +19,18 @@ $(document).ready(function($) {
 
     });
 
+    // gallery nav inner scroll indicator
+
+    $(".gallery-nav-outer").scroll(function (event){
+
+        $mark_scroll_left = $(".gallery-nav-outer").scrollLeft();
+
+        console.log($mark_scroll_left);
+
+        $(".gallery-nav-indicator-mark").css('margin-left',$mark_scroll_left);
+
+    });
+
     // hidden content
 
     $(".j-hidden-content").click(function (e){

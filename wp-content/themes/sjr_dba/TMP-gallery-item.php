@@ -96,6 +96,27 @@
 
     <nav class="gallery-nav col-12 col-3-t fl-R-t pad-S-t">
 
+        <?php
+        $this_parent_id = wp_get_post_parent_id($master_post_id);
+
+        $thumbnail_pages = get_pages( array(
+                        'post_type' => 'page',
+                        'post_status' => 'publish',
+                        //'post_parent' => $this_parent_id,
+                        'offset' => 0,
+                        'hierarchical' => 1,
+                        'parent' => $this_parent_id,
+                        'orderby' => 'title',
+                        'order' => 'ASC',
+                        'paged' => $paged
+                    ));
+                    $nav_item_width_counter = count($thumbnail_pages);
+        ;?>
+
+        <div class="col-12 gallery-nav-indicator" style="padding:.5em;">
+            <div class="gallery-nav-indicator-mark bg-white" style="line-height:0.5em;font-size:0.5em;width:<?php echo 100/$nav_item_width_counter;?>%">&nbsp;</div>
+        </div>
+
         <div class="col-2 col-6-t">
 
             <?php
@@ -130,8 +151,10 @@
 
         <div class="col-8 col-12-t gallery-nav-outer pad-N-t">
 
+
+
             <?php
-            $this_parent_id = wp_get_post_parent_id($master_post_id);
+
             //$nav_width_counter = 0;
             $global_counter = 0;
             $global_gallery_item_id = 0;
@@ -151,18 +174,7 @@
 
             $query = new WP_Query( $args );
 
-            $thumbnail_pages = get_pages( array(
-                'post_type' => 'page',
-                'post_status' => 'publish',
-                //'post_parent' => $this_parent_id,
-                'offset' => 0,
-                'hierarchical' => 1,
-                'parent' => $this_parent_id,
-                'orderby' => 'title',
-                'order' => 'ASC',
-                'paged' => $paged
-            ));
-            $nav_item_width_counter = count($thumbnail_pages);
+
 
             //var_dump($thumbnail_pages);
 
